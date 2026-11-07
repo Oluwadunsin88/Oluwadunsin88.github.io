@@ -154,7 +154,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 <div><h3 style="font-size:1.05rem">Geographic distribution</h3><div class="tw"><table><thead><tr><th>Local Government Area</th><th class=n>Projects</th></tr></thead><tbody><tr><td>Awka South</td><td class="n">70</td></tr><tr><td>Aguata</td><td class="n">18</td></tr><tr><td>Nnewi North</td><td class="n">13</td></tr><tr><td>Anaocha</td><td class="n">11</td></tr><tr><td>Ogbaru</td><td class="n">10</td></tr><tr><td>Orumba North</td><td class="n">10</td></tr><tr><td>Onitsha South</td><td class="n">9</td></tr><tr><td>Anambra East</td><td class="n">9</td></tr><tr><td>Idemili South</td><td class="n">8</td></tr><tr><td>Oyi</td><td class="n">8</td></tr></tbody></table></div></div></div>
 <h3 style="margin-top:24px">Data quality observations</h3><p>The dataset has substantial gaps, which limit financial, sectoral and timeline analysis. Missing values are reported as missing and are not treated as project failure.</p><div class="tw"><table><thead><tr><th>Field</th><th class=n>Missing records (of 201)</th></tr></thead><tbody><tr><td>Target completion</td><td class="n">201</td></tr><tr><td>Sector</td><td class="n">201</td></tr><tr><td>Completed</td><td class="n">201</td></tr><tr><td>Approved cost (NGN)</td><td class="n">200</td></tr><tr><td>Started</td><td class="n">200</td></tr><tr><td>Responsible MDA</td><td class="n">154</td></tr><tr><td>Progress (%)</td><td class="n">154</td></tr><tr><td>Schedule</td><td class="n">123</td></tr><tr><td>Last update</td><td class="n">47</td></tr><tr><td>LGA</td><td class="n">1</td></tr><tr><td>Location</td><td class="n">1</td></tr></tbody></table></div>
 <h3 style="margin-top:28px">Visualisations</h3><p class="note">Regenerated from the original dataset and checked against the figures above.</p>
-<div class="figs"><figure><img src="images/nigeria_01_status_distribution.png" alt="Project Status Distribution" loading="lazy"><figcaption>Project Status Distribution</figcaption></figure><figure><img src="images/nigeria_02_projects_by_lga.png" alt="Public Projects by Local Government Area" loading="lazy"><figcaption>Public Projects by Local Government Area</figcaption></figure><figure><img src="images/nigeria_03_missing_values.png" alt="Missing Values by Dataset Field" loading="lazy"><figcaption>Missing Values by Dataset Field</figcaption></figure><figure><img src="images/nigeria_04_progress_analysis.png" alt="Project Progress Analysis" loading="lazy"><figcaption>Project Progress Analysis</figcaption></figure></div>
+<div class="figs"><figure><img src="nigeria_01_status_distribution.png" alt="Project Status Distribution" loading="lazy"><figcaption>Project Status Distribution</figcaption></figure><figure><img src="nigeria_02_projects_by_lga.png" alt="Public Projects by Local Government Area" loading="lazy"><figcaption>Public Projects by Local Government Area</figcaption></figure><figure><img src="nigeria_03_missing_values.png" alt="Missing Values by Dataset Field" loading="lazy"><figcaption>Missing Values by Dataset Field</figcaption></figure><figure><img src="nigeria_04_progress_analysis.png" alt="Project Progress Analysis" loading="lazy"><figcaption>Project Progress Analysis</figcaption></figure></div>
 <div class="cols" style="margin-top:28px"><div class="card"><h3>What this demonstrates</h3><ul><li>Working with public-sector datasets</li><li>Assessing data quality and completeness</li><li>Using Python and SQL for structured analysis</li><li>Identifying reporting inconsistencies</li><li>Analysing geographic distribution</li><li>Communicating limitations responsibly</li></ul></div>
 <div class="card"><h3>Limitations</h3><p>The analysis describes the records, not the projects on the ground. It uses a single snapshot with no independent verification, and many fields are too incomplete for cost or timeline conclusions.</p><a class="btn" data-link="repo" href="#">View GitHub repository</a></div></div>
 </div></section>
@@ -176,7 +176,8 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 <div><div class="tw"><table><thead><tr><th>Model</th><th class=n>ROC-AUC</th><th class=n>PR-AUC</th></tr></thead><tbody><tr><td>Logistic Regression</td><td class=n>0.5263</td><td class=n>0.0423</td></tr><tr><td>Random Forest</td><td class=n>0.5199</td><td class=n>0.0372</td></tr><tr><td>Extra Trees</td><td class=n>0.5058</td><td class=n>0.0353</td></tr><tr><td>Gradient Boosting</td><td class=n>0.4737</td><td class=n>0.0355</td></tr></tbody></table></div></div></div>
 <p style="margin-top:14px">Logistic Regression scored best of the four on the holdout set, but its discrimination is weak. At the default threshold it identified 106 of 264 positive observations while producing 2,671 false positives. Positive prevalence in the test set is about 3.50% and PR-AUC is about 4.23%, so the gain over the baseline is modest.</p>
 <h3 style="margin-top:28px">Visualisations</h3>
-<div class="figs"><figure><img src="images/retention_01_v2_exit_reasons.png" alt="Simulated Exit Reasons" loading="lazy"><figcaption>Simulated Exit Reasons</figcaption></figure><figure><img src="images/retention_02_v2_monthly_resignations.png" alt="Monthly Resignations" loading="lazy"><figcaption>Monthly Resignations</figcaption></figure><figure><img src="images/retention_03_v2_experience_by_outcome.png" alt="Employee Experience by Resignation Outcome" loading="lazy"><figcaption>Employee Experience by Resignation Outcome</figcaption></figure><figure><img src="images/retention_04_v2_confusion_matrix.png" alt="Confusion Matrix" loading="lazy"><figcaption>Confusion Matrix</figcaption></figure><figure><img src="images/retention_05_v2_roc_curve.png" alt="ROC Curve" loading="lazy"><figcaption>ROC Curve</figcaption></figure><figure><img src="images/retention_06_v2_precision_recall_curve.png" alt="Precision-Recall Curve" loading="lazy"><figcaption>Precision-Recall Curve</figcaption></figure><figure><img src="images/retention_07_v2_feature_diagnostics.png" alt="Feature Diagnostics" loading="lazy"><figcaption>Feature Diagnostics</figcaption></figure><figure><img src="images/retention_08_v2_model_comparison.png" alt="Model Performance Comparison" loading="lazy"><figcaption>Model Performance Comparison</figcaption></figure></div>
+<div class="figs"><figure><img src="retention_01_v2_exit_reasons.png" alt="Simulated Exit Reasons" loading="lazy"><figcaption>Simulated Exit Reasons</figcaption></figure><figure><img src="retention_02_v2_monthly_resignations.png" alt="Monthly Resignations" loading="lazy"><figcaption>Monthly Resignations</figcaption></figure><figure><img src="retention_03_v2_experience_by_outcome.png" alt="Employee Experience by Resignation Outcome" loading="lazy"><figcaption>Employee Experience by Resignation Outcome</figcaption></figure><figure><img src="retention_04_v2_confusion_matrix.png" alt="Confusion Matrix" loading="lazy"><figcaption>Confusion Matrix</figcaption></figure><figure><img src="retention_05_v2_roc_curve.png" alt="ROC Curve" loading="lazy"><figcaption>ROC Curve</figcaption></figure><figure><img src="retention_06_v2_precision_recall_curve.png" alt="Precision-Recall Curve" loading="lazy"><figcaption>Precision-Recall Curve</figcaption></figure><figure><img src="
+retention_07_v2_feature_diagnostics.png" alt="Feature Diagnostics" loading="lazy"><figcaption>Feature Diagnostics</figcaption></figure><figure><img src="retention_08_v2_model_comparison.png" alt="Model Performance Comparison" loading="lazy"><figcaption>Model Performance Comparison</figcaption></figure></div>
 <div class="cols" style="margin-top:28px"><div class="card"><h3>What this demonstrates</h3><ul><li>Building and structuring an analytical dataset</li><li>Working with repeated employee-month observations</li><li>Handling censored observations and prediction windows</li><li>Chronological validation to avoid leakage</li><li>Comparing models and interpreting classification metrics</li><li>Communicating limits and responsible use</li></ul></div>
 <div class="card"><h3>Project repository</h3><p>Code, notebooks, data dictionary and the Version 1 development history.</p><a class="btn" data-link="retention" href="#">View GitHub repository</a></div></div>
 </div></section>
@@ -211,8 +212,30 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 <div class="card"><span class="tag">Topics I have written on</span><h3 style="margin-top:10px">White papers, case studies and reports</h3><p>Leadership transitions, employee retention, organisational culture, performance evaluation, career progression and workplace behaviour.</p></div>
 </div></div></section>
 
-<section id="education"><div class="wrap"><h2>Education and leadership</h2><div class="grid"><div class="card"><h3>Bachelor’s degree in History and International Studies</h3><p class="note">Adekunle Ajasin University, Akungba Akoko, Ondo State and 2023</p></div><div class="card"><h3>Leadership and activities</h3><ul><li>Board of Lecturers Coordinator, National Fellowship of Christian Students (NFCS)</li><li>Member, Sustainable Development Goals (SDG) community</li></ul></div></div></div></section>
-<section id="contact" style="background:var(--surface)"><div class="wrap">
+<section id="education">
+    <div class="wrap">
+        <h2>Education and leadership</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Bachelor’s Degree in History and International Studies</h3>
+                <p class="note">
+                    Adekunle Ajasin University, Akungba-Akoko, Ondo State
+                </p>
+                <p class="note">2023</p>
+            </div>
+
+            <div class="card">
+                <h3>Leadership and activities</h3>
+                <ul>
+                    <li>Board of Lecturers Coordinator, National Fellowship of Christian Students (NFCS)</li>
+                    <li>Member, Sustainable Development Goals (SDG) community</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section><section id="contact" style="background:var(--surface)"><div class="wrap">
 <h2>Let’s talk</h2>
 <p>I am looking for Data Analyst opportunities, particularly remote and hybrid roles. .</p>
 <p><a data-link="email" href="#">Email</a> · <a data-link="linkedin" href="#">LinkedIn</a> · <a data-link="github" href="#">GitHub</a> · <a data-link="cv" href="#" download>Download CV</a></p><p><button class="btn o" id="pdf" type="button">Save as PDF</button></p>
@@ -223,8 +246,18 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 <div id="toast" role="status"></div>
 <script>
 /* Edit this block: add your own details, then redeploy. */
-const CONFIG={name:"Oluwadunsin Olamiposi",email:"oluwadunsinolamiposi88@gmail.com",linkedin:"Olamiposi Olwadunsin",github:"https://github.com/Oluwadunsin88",repo:"https://github.com/Oluwadunsin88/nigeria-public-project-accountability",notebook:"",retention:"",idcard:"",cv:"Olamiposi Oluwadunsin Data Analyst CV ",photo:"My_picture"};
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const CONFIG = {
+    name: "Oluwadunsin Olamiposi",
+    email: "oluwadunsinolamiposi88@gmail.com",
+    linkedin: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/",
+    github: "https://github.com/Oluwadunsin88",
+    repo: "https://github.com/Oluwadunsin88/nigeria-public-project-accountability",
+    notebook: "",
+    retention: "",
+    idcard: "",
+    cv: "Olamiposi Oluwadunsin Data Analyst CV.pdf",
+    photo: "My_picture_jpg.jpeg"
+};const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),3200)}
 $$("[data-name]").forEach(e=>e.textContent=CONFIG.name);
 if(CONFIG.photo){$("#photo").innerHTML='<img alt="Portrait of '+CONFIG.name+'" src="'+CONFIG.photo+'">'}
