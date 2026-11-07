@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data Analyst Portfolio | Nigeria Public Project Accountability Audit</title>
+<meta name="description" content="Data Analyst, Business Research Analyst and Technical Solutions Developer. Featured: a data audit of 201 public project records in Anambra State, Nigeria.">
+<meta property="og:title" content="Data Analyst Portfolio">
+<meta property="og:description" content="Turning data into insights, and insights into solutions.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b0f1a;--surface:rgba(255,255,255,.05);--ink:#e8edf7;--muted:#a3aec6;--line:rgba(255,255,255,.14);--blue:#2dd4bf;--chip:rgba(255,255,255,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+
+
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem)}h3{font-size:1.2rem}
+p{margin:0 0 1em;max-width:68ch}a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.nav{position:sticky;top:10px;z-index:5;margin:10px auto 0;width:min(1040px,calc(100% - 24px));border-radius:22px;background:rgba(11,15,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.nav .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;min-height:58px}
+.brand{font:700 1.1rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none;margin-right:auto}
+.nav a.l{color:var(--muted);text-decoration:none;font-size:.95rem}.nav a.l:hover{color:var(--ink)}
+button,.btn{font:500 1rem "IBM Plex Sans",sans-serif;cursor:pointer}
+.tt{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 10px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;text-decoration:none;border:1px solid var(--blue);background:var(--blue);color:#04201c;font-weight:500}
+.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.pending{opacity:.65;border-style:dashed}
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;gap:40px;grid-template-columns:1.05fr .95fr;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.7rem);font-weight:700}
+
+.role{color:#5eead4;font-weight:500;margin-bottom:.6em}
+.who{display:flex;gap:14px;align-items:center;margin-bottom:22px}
+.ph{width:88px;height:88px;flex:none;border-radius:50%;background:rgba(255,255,255,.14);border:2px dashed #fff;display:grid;place-items:center;font-size:.75rem;color:#fff;text-align:center;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.board{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 48px rgba(0,0,0,.45);border-radius:22px;padding:20px}
+.board h2{font-size:1.05rem;margin-bottom:12px}
+#waffle{display:grid;grid-template-columns:repeat(21,1fr);gap:4px}
+.c{aspect-ratio:1;border-radius:2px;animation:pop .35s both;animation-delay:calc(var(--i)*7ms)}
+.done{background:#2dd4bf}.prog{background:#818cf8}.none{border:1px dashed #6b7a99}.flag{background:#fff;box-shadow:0 0 0 2px #f59e0b}
+@keyframes pop{from{opacity:0;transform:scale(.4)}}
+.lg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--muted);margin-top:12px}
+.lg i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.note{font-size:.8rem;color:var(--muted)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);box-shadow:0 8px 30px rgba(0,0,0,.3);border-radius:16px;padding:20px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:rgba(45,212,191,.55)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:6px;padding:2px 9px;font-size:.88rem}
+.use{font-size:.9rem;color:var(--muted);margin:10px 0 0}
+.f{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.f button{background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 14px}
+.f button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#04201c}
+.tag{display:inline-block;font-size:.82rem;border:1px solid var(--line);border-radius:6px;padding:1px 8px;color:var(--muted)}
+.more{display:none;border-top:1px solid var(--line);margin-top:12px;padding-top:12px;font-size:.96rem}
+.card[data-open="true"] .more{display:block}
+.card>button{background:none;border:0;color:var(--blue);padding:6px 0;text-decoration:underline}
+.feat{border-color:var(--blue)}
+.cs{display:grid;gap:0 32px;grid-template-columns:200px 1fr;border-top:1px solid var(--line)}
+.cs dt{font-weight:500;padding:14px 0}.cs dd{margin:0;padding:14px 0;border-top:1px solid var(--line)}
+.cs dt{border-top:1px solid var(--line)}.cs dt:first-of-type,.cs dd:first-of-type{border-top:0}
+.cs ul{margin:0;padding-left:1.1em}
+.bars div{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:.95rem}
+.bars b{display:block;height:22px;border-radius:4px;background:var(--blue)}
+.ph2{border:1px dashed var(--muted);border-radius:10px;padding:18px;text-align:center;color:var(--muted);font-size:.92rem}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}.tl .card{margin-bottom:14px}
+form{display:grid;gap:12px;max-width:520px}
+input,textarea{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90vw;z-index:9}
+#toast.on{opacity:1}@keyframes rise{from{opacity:0;transform:translateY(14px)}}body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(40% 35% at 15% 10%,rgba(20,184,166,.30),transparent 70%),radial-gradient(35% 30% at 85% 18%,rgba(124,58,237,.32),transparent 70%),radial-gradient(40% 35% at 60% 95%,rgba(245,158,11,.14),transparent 70%),radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.2px) 0 0/26px 26px;animation:drift 26s ease-in-out infinite alternate}@keyframes drift{to{transform:scale(1.08) translate(-1.5%,1%)}}.hero .wrap>*{animation:rise .7s both}.hero .wrap>*:nth-child(2){animation-delay:.15s}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.cs{grid-template-columns:1fr}.cs dt{padding-bottom:0;border-top:1px solid var(--line)}.cs dd{border-top:0;padding-top:4px}}
+@media (prefers-reduced-motion:reduce){body::before,.c,.hero .wrap>*{animation:none}.card{transition:none}.card:hover{transform:none}html{scroll-behavior:auto}}
+.jump{text-decoration:none;color:inherit;display:block}.proj{padding:64px 0;border-top:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}.stat{padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--surface)}.stat b{display:block;font:700 1.6rem "Bricolage Grotesque",sans-serif;color:var(--blue)}.stat span{font-size:.85rem;color:var(--muted)}
+.cols{display:grid;gap:24px;grid-template-columns:1fr 1fr;margin-top:18px}.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}th.n,td.n{text-align:right}
+.figs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}figure{margin:0;background:#fff;border-radius:12px;padding:10px}figure img{width:100%;height:auto;display:block}figcaption{color:#2a3550;font-size:.88rem;font-weight:500;padding:8px 4px 0}
+.warn{border-left:3px solid #f59e0b;padding:10px 14px;background:rgba(245,158,11,.12);border-radius:0 8px 8px 0;margin:16px 0}ol.m{padding-left:1.2em;margin:0}ul{padding-left:1.1em}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+@media print{:root{--bg:#fff;--ink:#000;--muted:#333;--line:#ccc;--blue:#0b5ed7;--chip:#eee;--surface:#fff}body::before,.nav,.btn,.btns{display:none!important}.card,.stat,.board{background:#fff!important;box-shadow:none!important;backdrop-filter:none!important}section,.proj{padding:24px 0;break-inside:avoid-page}figure{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#top" data-name>Your Name</a>
+<a class="l" href="#about">About</a><a class="l" href="#skills">Skills</a><a class="l" href="#projects">Projects</a><a class="l" href="#experience">Experience</a><a class="l" href="#education">Education</a><a class="l" href="#research">Research</a><a class="l" href="#contact">Contact</a>
+
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<div class="who"><div class="ph" id="photo">Photo<br>here</div><div><strong data-name>Your Name</strong><div class="role">Data Analyst | Business Research Analyst | Technical Solutions Developer</div></div></div>
+<h1>Turning Data Into Insights.<br>Turning Insights Into Solutions.</h1>
+<p>I combine data analytics, business research and technology to solve practical problems, uncover insights and support better business decisions.</p>
+<p>Open to Data Analyst roles, remote and hybrid. Latest work: an audit of 201 public project records from Anambra State, Nigeria, built with Python and SQL.</p>
+<div class="btns"><a class="btn" href="#projects">Explore my projects</a><a class="btn o" href="#contact">Contact me</a><a class="btn o" data-link="cv" href="#" download>Download CV</a></div>
+</div>
+<div class="board" role="group" aria-labelledby="bt">
+<h2 id="bt">The dataset behind my latest project</h2>
+<div id="waffle" aria-label="201 squares, one per project record: 78 completed, 46 in progress with recorded progress, 1 recorded at 100% but still in progress, 76 in progress with no progress recorded."></div>
+<div class="lg"><span><i style="background:#2dd4bf"></i>78 Completed</span><span><i style="background:#818cf8"></i>46 In Progress, progress recorded</span><span><i style="background:#fff;box-shadow:0 0 0 2px #f59e0b"></i>1 at 100%, still In Progress</span><span><i style="border:1px dashed #6b7a99"></i>76 In Progress, no progress recorded</span></div>
+<p class="note" style="margin:10px 0 0">One square per record. Counts are from the audit; square positions are illustrative, not record order.</p>
+</div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2>From history to evidence-led analysis</h2>
+<p>I am a Business Research Analyst with experience in business research, data analysis, workforce reporting, process improvement, requirements documentation and workflow automation, working in an HR-focused organisation. I have worked on workforce analytics, public-sector project accountability, survey research, data quality assessment, predictive modelling and business process automation.</p>
+<p>My degree is a Bachelor’s in History and International Studies. It trained me to do what analysis demands: question a source, weigh incomplete evidence, separate what is recorded from what is assumed, and explain a finding clearly. I now apply those habits to datasets, and I am moving towards specialised Data Analyst roles.</p>
+<p>I care about data that helps answer a question, exposes a problem or improves a decision, across business operations, public accountability, HR and organisational development.</p>
+</div></section>
+
+<section id="skills" style="background:var(--surface)"><div class="wrap">
+<h2>Technical skills</h2>
+<p class="note">Grouped by area. No self-scored levels.</p>
+<div class="grid">
+<div class="card"><h3>Data analysis and visualisation</h3><ul class="chips"><li>Excel</li><li>Tableau</li><li>Power BI</li><li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li><li>Data cleaning and preparation</li><li>Exploratory analysis</li><li>Dashboard development</li><li>Business reporting</li></ul><p class="use">Excel, Power BI and Python used in the Nigeria project audit.</p></div>
+<div class="card"><h3>Statistical analysis</h3><ul class="chips"><li>Regression</li><li>Hypothesis testing</li><li>Confidence intervals</li></ul></div>
+<div class="card"><h3>Programming and version control</h3><ul class="chips"><li>Python</li><li>JavaScript</li><li>SQL</li><li>NoSQL</li><li>Git and GitHub</li><li>Google Colab</li></ul><p class="use">Python, SQL, Colab and GitHub used in the Nigeria project.</p></div>
+<div class="card"><h3>Datastores and database design</h3><ul class="chips"><li>SQL (MySQL, PostgreSQL)</li><li>NoSQL (MongoDB)</li><li>Redis</li><li>Schema design</li><li>Normalisation and indexing</li><li>Data modelling</li><li>Query optimisation</li><li>Performance tuning</li></ul></div>
+<div class="card"><h3>Data modelling and engineering</h3><ul class="chips"><li>Data warehousing</li><li>ETL</li><li>Data governance</li></ul></div>
+<div class="card"><h3>Systems and scripting</h3><ul class="chips"><li>Linux/Unix</li><li>Server management</li><li>Automation and scripting (Bash, PowerShell)</li></ul></div>
+<div class="card"><h3>AI and automation</h3><ul class="chips"><li>LLMs (ChatGPT, Claude, Gemini)</li><li>AI-assisted analytics</li><li>Google Apps Script</li><li>Workflow automation</li><li>Email automation</li><li>Sheets, Forms, Drive</li></ul><p class="use">Apps Script used in HR workflow and email automation.</p></div>
+<div class="card"><h3>Digital solutions and reporting</h3><ul class="chips"><li>Employee ID card and verification portals</li><li>Client documentation dashboards</li><li>Payroll data validation</li><li>Executive reporting</li><li>Deployment on Render</li></ul><p class="use">ID card platform built and deployed on Render.</p></div>
+<div class="card"><h3>Research and business intelligence</h3><ul class="chips"><li>Business research</li><li>HR analytics</li><li>Requirements gathering</li><li>Survey development</li><li>Scenario analysis</li><li>Case studies</li><li>Process improvement</li></ul><p class="use">Used daily as a Business Research Analyst.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Featured projects</h2>
+<p>Four projects, each explained from the problem it addresses to what the analysis shows and where it falls short. The two analytics projects come first.</p>
+<div class="grid">
+<a class="card jump" href="#nigeria"><span class="tag">Public-sector analytics</span><h3 style="margin-top:10px">Nigeria Public Project Accountability</h3><p>A data-quality and reporting audit of 201 Anambra State project records.</p></a>
+<a class="card jump" href="#retention"><span class="tag">HR analytics · synthetic data</span><h3 style="margin-top:10px">Employee Retention Intelligence</h3><p>A simulated workforce and a six-month attrition model, with honest limits.</p></a>
+<a class="card jump" href="#idcard"><span class="tag">Process automation</span><h3 style="margin-top:10px">ID Card Management Platform</h3><p>A digital workflow replacing manual and paid ID card production.</p></a>
+<a class="card jump" href="#women"><span class="tag">Survey research</span><h3 style="margin-top:10px">Women’s Career Advancement Survey</h3><p>Research on barriers to women’s progression across sectors.</p></a>
+</div></div></section>
+
+<section class="proj" id="nigeria"><div class="wrap">
+<span class="tag">Public-sector analytics</span> <span class="tag">Data quality</span> <span class="tag">Accountability intelligence</span> <span class="tag">Real public records</span>
+<h2 style="margin-top:12px">Nigeria Public Project Accountability Intelligence System</h2>
+<div class="cols"><div><h3>Overview</h3><p>A data analytics project that examines public project information from Anambra State, Nigeria, to show how data can support transparency, accountability and project monitoring. It assesses reporting quality, implementation status and progress information, and identifies records that need further review.</p></div>
+<div><h3>Business problem</h3><p>Monitoring public projects depends on records that are complete and consistent. Missing information, and gaps between reported progress and status, make it hard to tell whether projects are moving as reported. This project tests how structured analysis can surface those issues.</p></div></div>
+<div class="stats"><div class="stat"><b>201</b><span>project records</span></div><div class="stat"><b>14</b><span>dataset fields</span></div><div class="stat"><b>123</b><span>In progress</span></div><div class="stat"><b>78</b><span>Completed</span></div><div class="stat"><b>47</b><span>in-progress records with progress</span></div><div class="stat"><b>54.19%</b><span>mean reported progress</span></div></div>
+<div class="cols"><div class="card"><h3>Dataset</h3><p>201 public project records from Anambra State with 14 fields.</p><ul class="chips"><li>Code</li><li>Title</li><li>Status</li><li>Schedule</li><li>LGA</li><li>Location</li><li>Responsible MDA</li><li>Sector</li><li>Progress (%)</li><li>Approved cost (NGN)</li><li>Started</li><li>Target completion</li><li>Completed</li><li>Last update</li></ul><h3 style="margin-top:18px">Tools</h3><ul class="chips"><li>Python</li><li>Pandas</li><li>SQL</li><li>Google Colab</li><li>Data visualisation</li><li>GitHub</li></ul></div>
+<div class="card"><h3>Methodology</h3><ol class="m"><li>Dataset loading and inspection</li><li>Data quality assessment</li><li>Missing-value analysis</li><li>Project status distribution</li><li>Project progress assessment</li><li>Geographic distribution by LGA</li><li>SQL-based analysis and querying</li><li>Identification of records needing review</li><li>Visualisation and documentation</li></ol></div></div>
+<h3 style="margin-top:28px">Key findings</h3>
+<div class="cols"><div><h3 style="font-size:1.05rem">Progress reporting</h3><p>Of the 123 In-progress projects, only 47 carry a reported progress value. Among those 47, mean progress is 54.19% and the median is 65%, ranging from 0% to 100%. The other 76 in-progress records have no value, and none of the 78 completed projects has a recorded progress value.</p>
+<div class="warn"><strong>One record flagged for review.</strong> Project PRJ-2026-000085 (Njikoka LGA) is marked In progress with 100% reported progress. This is a data consistency flag. It is not evidence of fraud, misconduct or project failure, and it needs verification before any conclusion is drawn.</div></div>
+<div><h3 style="font-size:1.05rem">Geographic distribution</h3><div class="tw"><table><thead><tr><th>Local Government Area</th><th class=n>Projects</th></tr></thead><tbody><tr><td>Awka South</td><td class="n">70</td></tr><tr><td>Aguata</td><td class="n">18</td></tr><tr><td>Nnewi North</td><td class="n">13</td></tr><tr><td>Anaocha</td><td class="n">11</td></tr><tr><td>Ogbaru</td><td class="n">10</td></tr><tr><td>Orumba North</td><td class="n">10</td></tr><tr><td>Onitsha South</td><td class="n">9</td></tr><tr><td>Anambra East</td><td class="n">9</td></tr><tr><td>Idemili South</td><td class="n">8</td></tr><tr><td>Oyi</td><td class="n">8</td></tr></tbody></table></div></div></div>
+<h3 style="margin-top:24px">Data quality observations</h3><p>The dataset has substantial gaps, which limit financial, sectoral and timeline analysis. Missing values are reported as missing and are not treated as project failure.</p><div class="tw"><table><thead><tr><th>Field</th><th class=n>Missing records (of 201)</th></tr></thead><tbody><tr><td>Target completion</td><td class="n">201</td></tr><tr><td>Sector</td><td class="n">201</td></tr><tr><td>Completed</td><td class="n">201</td></tr><tr><td>Approved cost (NGN)</td><td class="n">200</td></tr><tr><td>Started</td><td class="n">200</td></tr><tr><td>Responsible MDA</td><td class="n">154</td></tr><tr><td>Progress (%)</td><td class="n">154</td></tr><tr><td>Schedule</td><td class="n">123</td></tr><tr><td>Last update</td><td class="n">47</td></tr><tr><td>LGA</td><td class="n">1</td></tr><tr><td>Location</td><td class="n">1</td></tr></tbody></table></div>
+<h3 style="margin-top:28px">Visualisations</h3><p class="note">Regenerated from the original dataset and checked against the figures above.</p>
+<div class="figs"><figure><img src="nigeria_01_status_distribution.png" alt="Project Status Distribution" loading="lazy"><figcaption>Project Status Distribution</figcaption></figure><figure><img src="nigeria_02_projects_by_lga.png" alt="Public Projects by Local Government Area" loading="lazy"><figcaption>Public Projects by Local Government Area</figcaption></figure><figure><img src="nigeria_03_missing_values.png" alt="Missing Values by Dataset Field" loading="lazy"><figcaption>Missing Values by Dataset Field</figcaption></figure><figure><img src="nigeria_04_progress_analysis.png" alt="Project Progress Analysis" loading="lazy"><figcaption>Project Progress Analysis</figcaption></figure></div>
+<div class="cols" style="margin-top:28px"><div class="card"><h3>What this demonstrates</h3><ul><li>Working with public-sector datasets</li><li>Assessing data quality and completeness</li><li>Using Python and SQL for structured analysis</li><li>Identifying reporting inconsistencies</li><li>Analysing geographic distribution</li><li>Communicating limitations responsibly</li></ul></div>
+<div class="card"><h3>Limitations</h3><p>The analysis describes the records, not the projects on the ground. It uses a single snapshot with no independent verification, and many fields are too incomplete for cost or timeline conclusions.</p><a class="btn" data-link="repo" href="#">View GitHub repository</a></div></div>
+</div></section>
+
+<section class="proj" id="retention"><div class="wrap">
+<span class="tag">HR analytics</span> <span class="tag">Workforce intelligence</span> <span class="tag">Predictive modelling</span> <span class="tag">Version 2</span>
+<h2 style="margin-top:12px">Employee Retention Intelligence and Attrition Early Warning System</h2>
+<div class="warn"><strong>Synthetic data.</strong> Every employee, experience score and resignation in this project is simulated. The results do not describe real employees and do not establish real-world cause and effect.</div>
+<div class="cols"><div><h3>Overview</h3><p>A workforce analytics project that simulates employee history, experience indicators and resignations, then tests whether machine learning can flag employees who might leave within six months. Version 2 added a structured monthly employee-experience simulation. Version 1 is preserved in the repository as part of the development history.</p></div>
+<div><h3>Business problem</h3><p>Turnover affects productivity, recruitment cost, knowledge retention and stability. Historical resignation counts show what happened but say little about changing employee experience. The project explores how workforce data and modelling could support earlier identification of retention risk.</p></div></div>
+<div class="stats"><div class="stat"><b>2,000</b><span>synthetic employees</span></div><div class="stat"><b>24,182</b><span>monthly records</span></div><div class="stat"><b>130</b><span>simulated resignations</span></div><div class="stat"><b>6.5%</b><span>simulated resignation rate</span></div><div class="stat"><b>0.5263</b><span>best ROC-AUC (weak)</span></div><div class="stat"><b>0.0423</b><span>PR-AUC vs 3.50% baseline</span></div></div>
+<div class="cols"><div class="card"><h3>Data and tools</h3><p>Simulated period January 2024 to December 2025. Experience indicators: job satisfaction, work-life balance, engagement, manager relationship, workload and months at company.</p><ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Matplotlib</li><li>Seaborn</li><li>Google Colab</li><li>GitHub</li></ul></div>
+<div class="card"><h3>Methodology</h3><ol class="m"><li>Synthetic employee data generation</li><li>Employee master data assessment</li><li>Monthly workforce history generation</li><li>Employee experience simulation</li><li>Resignation event simulation</li><li>Data cleaning and preparation</li><li>Six-month attrition target construction</li><li>Right-censoring and observation-window handling</li><li>Chronological training and testing</li><li>Logistic Regression modelling</li><li>Model comparison</li><li>Evaluation and visualisation</li></ol></div></div>
+<h3 style="margin-top:28px">Simulated resignation reasons</h3><p>These are reasons assigned by the simulation, not results from a real survey or exit interviews.</p><div class="tw"><table><thead><tr><th>Resignation reason</th><th class=n>Simulated exits</th></tr></thead><tbody><tr><td>Workload and overtime</td><td class=n>47</td></tr><tr><td>Work-life balance</td><td class=n>27</td></tr><tr><td>Management relationship</td><td class=n>20</td></tr><tr><td>Low engagement</td><td class=n>18</td></tr><tr><td>Job dissatisfaction</td><td class=n>18</td></tr><tr><td><strong>Total</strong></td><td class=n><strong>130</strong></td></tr></tbody></table></div>
+<h3 style="margin-top:28px">Target and validation design</h3><p>Each employee-month is labelled positive if an exit occurs within the next six months, negative if no exit occurs and the full six-month window is observed, and censored if the window is incomplete. Censored rows are excluded, which avoids treating unobserved futures as stays. Of 14,226 eligible observations, 652 are positive and 13,574 negative; 9,956 are censored.</p>
+<div class="tw"><table><thead><tr><th>Period</th><th class=n>Purpose</th><th class=n>Observations</th><th class=n>Positive cases</th></tr></thead><tbody><tr><td>January to June 2024</td><td class=n>Training</td><td class=n>1,753</td><td class=n>52</td></tr><tr><td>July to December 2024</td><td class=n>Embargo</td><td class=n>—</td><td class=n>—</td></tr><tr><td>January to June 2025</td><td class=n>Testing</td><td class=n>7,537</td><td class=n>264</td></tr></tbody></table></div>
+<h3 style="margin-top:28px">Results</h3>
+<div class="cols"><div><div class="tw"><table><thead><tr><th>Logistic Regression metric</th><th class=n>Result</th></tr></thead><tbody><tr><td>Accuracy</td><td class=n>62.47%</td></tr><tr><td>Precision</td><td class=n>3.82%</td></tr><tr><td>Recall</td><td class=n>40.15%</td></tr><tr><td>F1 score</td><td class=n>6.97%</td></tr><tr><td>ROC-AUC</td><td class=n>0.5263</td></tr><tr><td>PR-AUC</td><td class=n>0.0423</td></tr></tbody></table></div></div>
+<div><div class="tw"><table><thead><tr><th>Model</th><th class=n>ROC-AUC</th><th class=n>PR-AUC</th></tr></thead><tbody><tr><td>Logistic Regression</td><td class=n>0.5263</td><td class=n>0.0423</td></tr><tr><td>Random Forest</td><td class=n>0.5199</td><td class=n>0.0372</td></tr><tr><td>Extra Trees</td><td class=n>0.5058</td><td class=n>0.0353</td></tr><tr><td>Gradient Boosting</td><td class=n>0.4737</td><td class=n>0.0355</td></tr></tbody></table></div></div></div>
+<p style="margin-top:14px">Logistic Regression scored best of the four on the holdout set, but its discrimination is weak. At the default threshold it identified 106 of 264 positive observations while producing 2,671 false positives. Positive prevalence in the test set is about 3.50% and PR-AUC is about 4.23%, so the gain over the baseline is modest.</p>
+<h3 style="margin-top:28px">Visualisations</h3>
+<div class="figs"><figure><img src="retention_01_v2_exit_reasons.png" alt="Simulated Exit Reasons" loading="lazy"><figcaption>Simulated Exit Reasons</figcaption></figure><figure><img src="retention_02_v2_monthly_resignations.png" alt="Monthly Resignations" loading="lazy"><figcaption>Monthly Resignations</figcaption></figure><figure><img src="retention_03_v2_experience_by_outcome.png" alt="Employee Experience by Resignation Outcome" loading="lazy"><figcaption>Employee Experience by Resignation Outcome</figcaption></figure><figure><img src="retention_04_v2_confusion_matrix.png" alt="Confusion Matrix" loading="lazy"><figcaption>Confusion Matrix</figcaption></figure><figure><img src="retention_05_v2_roc_curve.png" alt="ROC Curve" loading="lazy"><figcaption>ROC Curve</figcaption></figure><figure><img src="retention_06_v2_precision_recall_curve.png" alt="Precision-Recall Curve" loading="lazy"><figcaption>Precision-Recall Curve</figcaption></figure><figure><img src="
+retention_07_v2_feature_diagnostics.png" alt="Feature Diagnostics" loading="lazy"><figcaption>Feature Diagnostics</figcaption></figure><figure><img src="retention_08_v2_model_comparison.png" alt="Model Performance Comparison" loading="lazy"><figcaption>Model Performance Comparison</figcaption></figure></div>
+<div class="cols" style="margin-top:28px"><div class="card"><h3>What this demonstrates</h3><ul><li>Building and structuring an analytical dataset</li><li>Working with repeated employee-month observations</li><li>Handling censored observations and prediction windows</li><li>Chronological validation to avoid leakage</li><li>Comparing models and interpreting classification metrics</li><li>Communicating limits and responsible use</li></ul></div>
+<div class="card"><h3>Project repository</h3><p>Code, notebooks, data dictionary and the Version 1 development history.</p><a class="btn" data-link="retention" href="#">View GitHub repository</a></div></div>
+</div></section>
+
+<section class="proj" id="idcard"><div class="wrap">
+<span class="tag">Business process automation</span> <span class="tag">Application development</span>
+<h2 style="margin-top:12px">ID Card Management Platform</h2>
+<div class="cols"><div><h3>Overview</h3><p>I designed and built a platform to streamline employee identification and ID card generation, reducing dependence on paid third-party services with a practical internal solution for managing employee information.</p></div>
+<div><h3>Business problem</h3><p>Manual ID card management causes delays, repetitive administration and inconsistent employee information. The platform replaces it with a structured digital workflow.</p></div></div>
+<div class="cols"><div class="card"><h3>Key capabilities</h3><ul><li>Employee information management</li><li>Template-based ID card generation</li><li>Digital document handling</li><li>Structured record management</li><li>Automated workflow processes</li></ul></div>
+<div class="card"><h3>Technology and development</h3><p>The first version used Google Apps Script, Google Sheets and Google Drive. It was later developed and deployed through Visual Studio Code, GitHub and Render.</p><ul class="chips"><li>Google Apps Script</li><li>Google Sheets</li><li>Google Drive</li><li>VS Code</li><li>GitHub</li><li>Render</li></ul><p class="note">Screenshots and workflow diagrams to be added.</p><a class="btn o" data-link="idcard" href="#">View repository</a></div></div>
+</div></section>
+
+<section class="proj" id="women"><div class="wrap">
+<span class="tag">Survey analytics</span> <span class="tag">Business research</span>
+<h2 style="margin-top:12px">Women’s Career Advancement Survey</h2>
+<p>I contributed to a research initiative, <em>Exploring Challenges to Women’s Career Advancement in the Private and Public Sectors</em>, which examines why women’s representation can fall between entry-level roles and senior leadership.</p>
+<div class="cols"><div class="card"><h3>Objectives</h3><ul><li>Explore challenges affecting women’s career advancement</li><li>Understand barriers across private and public sector organisations</li><li>Gather perspectives from both men and women</li><li>Organise responses for analysis</li><li>Support evidence-based discussion of inclusion and progression</li></ul></div>
+<div class="card"><h3>My contribution</h3><ul><li>Survey development and structuring</li><li>Research coordination and distribution support</li><li>Response tracking and data organisation</li><li>Spreadsheet management</li><li>Preparing research materials and reporting</li></ul><p class="note">.</p></div></div>
+</div></section>
+
+<section id="experience" style="background:var(--surface)"><div class="wrap"><h2>Professional experience</h2><div class="tl">
+<div class="card"><h3>Business Research Analyst</h3><p class="note">HR-focused organisation · Add employment dates</p><ul><li>Gather and document business requirements across recruitment, payroll, onboarding and performance management.</li><li>Research business and industry trends, challenges and opportunities.</li><li>Write white papers, case studies, scenario analyses and thought leadership materials.</li><li>Support workforce reporting on attrition, headcount and time-to-hire.</li><li>Prepare reports, spreadsheets, graphs and visual materials for meetings and presentations.</li><li>Review business processes to find ways to improve efficiency, reduce manual work and support compliance.</li><li>Support research through survey development, data organisation and response tracking.</li><li>Maintain lead-tracking processes and support email outreach.</li><li>Implement workflow automation with Google Apps Script.</li></ul></div>
+<div class="card"><h3>Internship</h3><ul><li>Wrote white papers and scenario analyses and managed thought leadership content.</li><li>Gathered emails, automated email processes, tracked leads and managed social media.</li></ul></div>
+</div></div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research and white papers</h2>
+<p>As a Business Research Analyst, I researched and wrote white papers, case studies and scenario analyses for an HR audience. They are organisational documents, so I describe the work here and share samples only with permission or on request.</p>
+<div class="grid">
+<div class="card"><span class="tag">Scenario analysis white paper</span><h3 style="margin-top:10px">Career Plateau Dilemma: Scenarios for Sustaining Engagement and Output</h3><p>I researched and wrote this paper on how managers and HR can sustain experienced employees’ contribution. Organisational document: not publicly shared.</p><a class="btn o" data-link="email" href="#">Request a sample</a></div>
+<div class="card"><span class="tag">Topics I have written on</span><h3 style="margin-top:10px">White papers, case studies and reports</h3><p>Leadership transitions, employee retention, organisational culture, performance evaluation, career progression and workplace behaviour.</p></div>
+</div></div></section>
+
+<section id="education">
+    <div class="wrap">
+        <h2>Education and leadership</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Bachelor’s Degree in History and International Studies</h3>
+                <p class="note">
+                    Adekunle Ajasin University, Akungba-Akoko, Ondo State
+                </p>
+                <p class="note">2023</p>
+            </div>
+
+            <div class="card">
+                <h3>Leadership and activities</h3>
+                <ul>
+                    <li>Board of Lecturers Coordinator, National Fellowship of Christian Students (NFCS)</li>
+                    <li>Member, Sustainable Development Goals (SDG) community</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section><section id="contact" style="background:var(--surface)"><div class="wrap">
+<h2>Let’s talk</h2>
+<p>I am looking for Data Analyst opportunities, particularly remote and hybrid roles. .</p>
+<p><a data-link="email" href="#">Email</a> · <a data-link="linkedin" href="#">LinkedIn</a> · <a data-link="github" href="#">GitHub</a> · <a data-link="cv" href="#" download>Download CV</a></p><p><button class="btn o" id="pdf" type="button">Save as PDF</button></p>
+<form id="cf"><label>Your name<input name="n" required autocomplete="name"></label><label>Your email<input type="email" name="e" required autocomplete="email"></label><label>Message<textarea name="m" rows="5" required></textarea></label><button class="btn" type="submit">Send message</button></form>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-name>Your Name</span>. </div></footer>
+<div id="toast" role="status"></div>
+<script>
+/* Edit this block: add your own details, then redeploy. */
+const CONFIG = {
+    name: "Oluwadunsin Olamiposi",
+    email: "oluwadunsinolamiposi88@gmail.com",
+    linkedin: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/",
+    github: "https://github.com/Oluwadunsin88",
+    repo: "https://github.com/Oluwadunsin88/nigeria-public-project-accountability",
+    notebook: "",
+    retention: "",
+    idcard: "",
+    cv: "Olamiposi Oluwadunsin Data Analyst CV.pdf",
+    photo: "My_picture_jpg.jpeg"
+};const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),3200)}
+$$("[data-name]").forEach(e=>e.textContent=CONFIG.name);
+if(CONFIG.photo){$("#photo").innerHTML='<img alt="Portrait of '+CONFIG.name+'" src="'+CONFIG.photo+'">'}
+$$("[data-link]").forEach(a=>{const k=a.dataset.link,v=CONFIG[k];
+ if(v){a.href=k==="email"?"mailto:"+v:v;if(k!=="cv"&&k!=="email"){a.target="_blank";a.rel="noopener"}}
+ else{a.classList.add("pending");a.title="Add your link in the CONFIG block";a.addEventListener("click",e=>{e.preventDefault();toast("Placeholder: add your "+k+" link in the CONFIG block.")})}});
+const w=$("#waffle");
+for(let i=0;i<201;i++){const j=i-78;let c,t;
+ if(i<78){c="done";t="Completed"}else if(j===0){c="flag";t="In Progress, recorded 100%: needs verification"}
+ else if(j<47){c="prog";t="In Progress, progress recorded"}else{c="none";t="In Progress, no progress recorded"}
+ const s=document.createElement("span");s.className="c "+c;s.title=t;s.style.setProperty("--i",i);w.append(s)}
+$$(".f button").forEach(b=>b.addEventListener("click",()=>{$$(".f button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+ $$("#cards .card").forEach(c=>c.hidden=!(b.dataset.f==="all"||c.dataset.cat===b.dataset.f))}));
+$$("#cards .card>button").forEach(b=>b.addEventListener("click",()=>{const c=b.parentElement,o=c.dataset.open!=="true";
+ c.dataset.open=o;b.setAttribute("aria-expanded",o);b.textContent=o?"Hide details":"View project"}));
+$("#pdf").addEventListener("click",()=>print());
+$("#cf").addEventListener("submit",e=>{e.preventDefault();
+ if(!CONFIG.email){toast("Placeholder: add your email in the CONFIG block so messages reach you.");return}
+ const f=new FormData(e.target);
+ location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Portfolio enquiry from "+f.get("n"))+"&body="+encodeURIComponent(f.get("m")+"\n\nReply to: "+f.get("e"))});
+</script>
+</body>
+</html>
